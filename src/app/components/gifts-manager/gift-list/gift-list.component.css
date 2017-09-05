@@ -1,0 +1,13 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap:50px;
+  padding: 50px;
+  justify-content: center;
+}
+
+.list-container{
+  height: 700px;
+  overflow-y:auto;
+
+}

@@ -1,0 +1,12 @@
+<div class="filter-container">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <md-select placeholder="Budget"  ngModel name="priceSelect"  >
+      <md-option *ngFor="let price of priceFilter" [value]="price.TagId">{{ price.DisplayText }}</md-option>
+    </md-select>
+    <md-select placeholder="Gender" ngModel name="genderSelect" >
+      <md-option *ngFor="let gender of genderFilter" [value]="gender.TagId">{{ gender.DisplayText }}</md-option>
+    </md-select>
+    <button md-raised-button  color="primary" type="submit">Filter</button>
+  </form>
+
+</div>
